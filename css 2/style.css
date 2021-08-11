@@ -1,0 +1,249 @@
+.root {
+    font-family: sans-serif;
+}
+
+.root *,
+.root *:before,
+.root *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.root .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.root .clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.icons1 {
+    padding: 370px 0 0 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.icons1 .background {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.icons1 .header {
+    padding: 78px 0;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.icons1 .header>.wrapper {
+    width: 420px;
+}
+
+.icons1 .header .bar {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+.icons1 .header .title {
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+}
+
+.icons1 .header .detail {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.icons1 .slider {
+    background: rgba(1, 2, 4, 0.5);
+    padding: 25px 70px;
+    text-align: center;
+    position: relative;
+}
+
+.icons1 .slide .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.icons1 .slider .swiper-slide {
+    padding: 27.5px 0;
+    height: 105px;
+    width: 105px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #262626;
+    background: rgba(38, 38, 38, 0.75);
+    border-radius: 50%;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icons1 .slider .swiper-slide .img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.icons1 .slider .swiper-slide:hover {
+    background: #666;
+    border-color: #666;
+}
+
+.icons1 .slider .swiper-slide .img img {
+    width: 100%;
+}
+
+.icons1 .slider .swiper-slide .text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.icons1 .slider .angle {
+    position: absolute;
+    top: 50%;
+    margin-top: -29px;
+}
+
+.icons1 .slider .angle.left {
+    left: 25px;
+}
+
+.icons1 .slider .angle.right {
+    right: 25px;
+}
+
+.icons1 .slider .angle img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.icons1 .slider .angle img:hover {
+    opacity: 1;
+}
+
+.text1 {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.text1 .title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.text1 .title>span {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.text1 .title>a {
+    cursor: pointer;
+    float: right;
+    padding: 1px;
+    font-size: 42px;
+    line-height: 23px;
+}
+
+.text1 .paragraph {
+    margin: 0 0 20px 0;
+}
+
+.footer1 {
+    margin-top: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff;
+    background: #262626;
+}
+
+.footer1 .brand {
+    float: left;
+    color: inherit;
+    cursor: pointer;
+    font-family: "Parisienne", cursive;
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.footer1 .copyright {
+    padding-top: 5px;
+    float: left;
+}
+
+.footer1 .copyright>div {
+    margin-bottom: 10px;
+}
+
+.footer1 .sns {
+    float: right;
+    padding-top: 12.5px;
+}
+
+.footer1 .sns>a {
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.footer1 .sns>a:hover {
+    background: #fff;
+    color: #262626;
+}
+
+@media(max-width:767px) {
+    .footer1 {
+        text-align: center;
+    }
+
+    .footer1 .brand {
+        float: none;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+
+    .footer1 .copyright {
+        float: none;
+        margin: 15px 0 25px 0;
+        text-decoration: underline;
+    }
+
+    .footer1 .sns {
+        float: none;
+    }
+}

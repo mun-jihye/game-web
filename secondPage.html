@@ -1,32 +1,151 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>layout06</title>
-    <style>
-        * {margin: 0; padding: 0;}
-        #wrap {text-align: center; font-size: 30px; color: #fff;}
-        #header {height: 140px; line-height: 140px; background: #ffe1e4;}
-        #banner {height: 450px; line-height: 450px; background: #fbd6e3;}
-        #content {height: 950px; line-height: 950px; background: #ead5ee;}
-        #footer {height: 220px; line-height: 220px; background: #d6ebfd;}
-        .contaniner {width: 1100px; margin: 0 auto; height: inherit; background: rgba(0,0,0,0.3);}
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div id="wrap">
-        <div id="header">
-            <div class="contaniner">header</div>
+    <div class="root">
+        <div class="icons1">
+            <div class="background" style="background-image:url(img/wall-416060_1280.jpg);"></div>
+            <div class="header">
+                <div class="wrapper">
+                    <span class="bar"></span>
+                    <div class="title">
+                        <b>Introduce </b>
+                        <span>Game</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide">
+                                <img src="img/window1-white-24.png">
+                                <span class="text">Game</span>
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="img/window1-white-24.png">
+                                <span class="text">Cube</span>
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="img/window1-white-24.png">
+                                <span class="text">Items</span>
+                            </a>
+                            <a class="swiper-slide">
+                                <img src="img/window1-white-24.png">
+                                <span class="text">Thema</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="angle left">
+                        <img src="img/angle-left-white-30.png">
+                    </div>
+                    <div class="angle right">
+                        <img src="img/angle-right-white-30.png">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="banner">
-            <div class="contaniner">banner</div>
+        <div class="text1">
+            <div class="wrapper">
+                <div class="title">
+                    <span>VIVAMUS A VENENATIS</span>
+                    <a>+</a>
+                </div>
+                <div class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl.
+                    Aenean
+                    ut
+                    nisl suscipit,
+                    ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis arcu. Nunc leo lorem,
+                    fringilla
+                    ut
+                    est semper, rhoncus fringilla enim. Nulla facilisi. Nunc placerat vitae erat sed rutrum. Quisque felis
+                    justo,
+                    eleifend eu lorem nec, elementum eleifend lacus. Quisque mollis a nisl eget gravida. In viverra non dui
+                    at
+                    hendrerit. Etiam porttitor neque orci, ut ultrices mauris tristique id. Phasellus sed lobortis lectus.
+                    Praesent
+                    sed arcu volutpat, iaculis massa eget, blandit nunc. Vestibulum ultrices odio rutrum ipsum vestibulum
+                    sollicitudin.
+                </div>
+                <div class="paragraph">Sed at arcu ut sem consequat ornare. Suspendisse sagittis ipsum mauris, sit amet
+                    porta
+                    libero
+                    facilisis nec. Cras
+                    fermentum sagittis leo, vel pellentesque libero hendrerit non. Vivamus finibus non nisl in consequat.
+                    Morbi
+                    euismod quam eu aliquam condimentum. Vestibulum vitae risus tincidunt, malesuada nunc a, tincidunt
+                    justo.
+                    Proin
+                    ac congue eros, nec tincidunt tortor.</div>
+                <div class="paragraph">Donec interdum ut augue id accumsan. Nulla tincidunt leo in lorem luctus cursus. In
+                    in
+                    dui et
+                    lectus facilisis
+                    venenatis. Fusce nec lacus quis elit semper porta gravida nec ligula. Nullam commodo turpis nec velit
+                    auctor,
+                    dapibus ultricies nisi porttitor. Nullam eleifend mauris ut ex scelerisque, eu lobortis erat rhoncus.
+                    Nunc
+                    gravida dolor lacus, vitae tristique nisl mollis sit amet. Nullam pretium porttitor dui, vel bibendum
+                    nisi.
+                    Suspendisse sit amet metus vulputate, scelerisque orci non, mollis ligula. Aenean ullamcorper neque a
+                    libero
+                    mattis, et scelerisque lacus venenatis. Etiam ac massa vel risus congue finibus vel nec turpis. Morbi
+                    non
+                    velit
+                    in nunc condimentum dictum.</div>
+                <div class="paragraph">Sed nec purus condimentum, lobortis nunc vitae, venenatis eros. Donec sit amet
+                    dapibus
+                    lorem,
+                    vel
+                    imperdiet arcu.
+                    Maecenas ac nibh blandit dolor bibendum hendrerit quis eu eros. Cras tortor ipsum, fringilla at ligula
+                    sed,
+                    mollis porttitor nibh. Donec rutrum maximus neque suscipit fringilla. Duis viverra ex dui, sed fermentum
+                    mauris
+                    pulvinar vel. Duis lobortis felis ac lorem molestie laoreet. Donec vitae sapien est. Maecenas tincidunt
+                    maximus
+                    nibh ultricies elementum. Cras convallis, augue et luctus feugiat, arcu leo auctor libero, non maximus
+                    nulla
+                    sem
+                    vel nulla.</div>
+                <div class="paragraph">Sed facilisis metus sit amet tellus sollicitudin, id finibus ante tristique.
+                    Curabitur
+                    non
+                    risus at
+                    elit
+                    ullamcorper lobortis. Pellentesque facilisis et mauris id fringilla. Aliquam laoreet tellus at mi
+                    eleifend
+                    efficitur. Proin a mauris id neque sagittis consectetur hendrerit sit amet arcu. Quisque pretium tellus
+                    lacus,
+                    ut bibendum dolor hendrerit vitae. Sed vehicula nibh velit, quis maximus tellus vulputate vel.
+                    Suspendisse
+                    potenti.</div>
+            </div>
         </div>
-        <div id="content">
-            <div class="contaniner">content</div>
-        </div>
-        <div id="footer">
-            <div class="contaniner">footer</div>
+        <div class="footer1">
+            <div class="wrapper clearfix">
+                <a class="brand">GameName</a>
+                <div class="copyright">
+                    <div><a>! 2021년 무더위 여름을 날려버릴 화끈한 이벤트 안내 !</a></div>
+                    <div>© 2021. <a>이용약관</a>. <a>개인정보처리방침</a></div>
+                </div>
+                <div class="sns">
+                    <a class="fa fa-twitter"></a>
+                    <a class="fa fa-facebook"></a>
+                    <a class="fa fa-instagram"></a>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

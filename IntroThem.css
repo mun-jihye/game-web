@@ -1,0 +1,350 @@
+.root {
+    font-family: sans-serif;
+}
+
+.root *,
+.root *:before,
+.root *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.root .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.root .clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.okay1 {
+    padding: 370px 0 0 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.okay1 .background {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.okay1 .header {
+    padding: 78px 0;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.okay1 .header>.wrapper {
+    width: 420px;
+}
+
+.okay1 .header .bar {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+.okay1 .header .title {
+    margin: 20px 0 30px 0;
+    font-size: 30px;
+}
+
+.okay1 .header .detail {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.okay1 .slider {
+    background: rgba(1, 2, 4, 0.5);
+    padding: 25px 70px;
+    text-align: center;
+    position: relative;
+}
+
+.okay1 .slide .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.okay1 .slider .swiper-slide {
+    padding: 27.5px 0;
+    height: 105px;
+    width: 105px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #262626;
+    background: rgba(38, 38, 38, 0.75);
+    border-radius: 50%;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.okay1 .slider .swiper-slide .img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+.okay1 .slider .swiper-slide:hover {
+    background: #666;
+    border-color: #666;
+}
+
+.okay1 .slider .swiper-slide .img img {
+    width: 100%;
+}
+
+.okay1 .slider .swiper-slide .text {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.okay1 .slider .angle {
+    position: absolute;
+    top: 50%;
+    margin-top: -29px;
+}
+
+.okay1 .slider .angle.left {
+    left: 25px;
+}
+
+.okay1 .slider .angle.right {
+    right: 25px;
+}
+
+.okay1 .slider .angle img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.okay1 .slider .angle img:hover {
+    opacity: 1;
+}
+
+.slider1 {
+    margin-bottom: 30px;
+}
+
+.slider1>.wrapper {
+    position: relative;
+    padding-left: 385px;
+}
+
+.slider1 .texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 385px;
+    padding: 25px 50px 25px 15px;
+}
+
+.slider1 .texts .top {
+    color: #007aff;
+    font-weight: bold;
+}
+
+.slider1 .texts .title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+.slider1 .texts .desc {
+    color: #666;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+
+.slider1 .texts button {
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.slider1 .texts button:hover {
+    background: #007aff;
+    border-color: #007aff;
+    color: #fff;
+}
+
+.slider1 .slider {
+    padding: 0 50px;
+    position: relative;
+}
+
+.slider1 .slider .swiper-container {
+    position: static;
+}
+
+.slider1 .slider .swiper-container .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slider1 .slider .swiper-container .swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.slider1 .slider .swiper-container .swiper-button-next,
+.slider1 .slider .swiper-container .swiper-button-prev {
+    padding: 0 15px;
+}
+
+.slider1 .slider .swiper-container .swiper-button-next {
+    right: 0;
+}
+
+.slider1 .slider .swiper-container .swiper-button-prev {
+    left: 0;
+}
+
+.slider1 .slider .swiper-container .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+
+@media(max-width:991px) {
+    .slider1>.wrapper {
+        padding-left: 15px;
+    }
+
+    .slider1 .texts {
+        position: static;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .slider1 .slider {
+        padding: 0;
+    }
+
+    .slider1 .slider .swiper-container .swiper-button-next {
+        right: 15px;
+    }
+
+    .slider1 .slider .swiper-container .swiper-button-prev {
+        left: 15px;
+    }
+}
+
+.okay2 {
+    margin-top: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: #fff;
+    background: #262626;
+}
+
+.okay2 .brand {
+    float: left;
+    color: inherit;
+    cursor: pointer;
+    font-family: "Parisienne", cursive;
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.okay2 .copyright {
+    padding-top: 5px;
+    float: left;
+}
+
+.okay2 .copyright>div {
+    margin-bottom: 10px;
+}
+
+.okay2 .sns {
+    float: right;
+    padding-top: 12.5px;
+}
+
+.okay2 .sns>a {
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.okay2 .sns>a:hover {
+    background: #fff;
+    color: #262626;
+}
+
+@media(max-width:767px) {
+    .okay2 {
+        text-align: center;
+    }
+
+    .okay2 .brand {
+        float: none;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+
+    .okay2 .copyright {
+        float: none;
+        margin: 15px 0 25px 0;
+        text-decoration: underline;
+    }
+
+    .okay2 .sns {
+        float: none;
+    }
+}

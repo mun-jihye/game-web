@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
+    <link href="ann.css" rel="stylesheet">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDgDNuFcbeHQdZ6M4Qn_GoVszPutdUj6Cs",
+          authDomain: "magic-tile-b9e63.firebaseapp.com",
+          projectId: "magic-tile-b9e63",
+          storageBucket: "magic-tile-b9e63.appspot.com",
+          messagingSenderId: "581318165297",
+          appId: "1:581318165297:web:7bde6db16fec982f2c6610",
+          measurementId: "G-FHF693LT31"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <div class="root">
+        <div class="icons1">
+            <div class="background" style="background-image:url(img/우주배경3.jpg);"></div>
+            <div class="header">
+                <div class="wrapper">
+                    <span class="bar"></span>
+                    <div class="title">
+                        <div><h2><a href="index.html" style='text-decoration:none;color:#c5cae9;font-family: Parisienne, cursive'>Magic tile</a></h2></div>
+                        <span>Community</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide">
+                                <img src="img/window1-white-24.png">
+                                <span class="text">공지사항</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="angle left">
+                        <img src="img/angle-left-white-30.png">
+                    </div>
+                    <div class="angle right">
+                        <img src="img/angle-right-white-30.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="board1">
+            <div class="header">
+                <div class="wrapper">
+                    <a class="title">공지 사항</a>
+                </div>
+            </div>
+            <div class="article">
+                <div class="wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="check">
+                                    <input name="check" type="checkbox">
+                                </th>
+                                <th class="num">Num</th>
+                                <th>Topic</th>
+                                <th>Writer</th>
+                                <th class="date">Date</th>
+                                <th class="views">Views</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="check">
+                                    <input name="check" type="checkbox">
+                                </td>
+                                <td class="num">5</td>
+                                <td class="title">
+                                    <a>::어둠땅 업데이트 예정:: 지배의 사슬 음악과 함께 여행길에 올라 보세요~~</a>
+                                    <span class="update">UPDATE</span>
+                                </td>
+                                <td>admin</td>
+                                <td class="date">2021-12-27</td>
+                                <td class="views">42</td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input name="check" type="checkbox">
+                                </td>
+                                <td class="num">4</td>
+                                <td class="title">
+                                    <a>::큐브 추가:: 새로운 큐브 스킨이 나왔습니다!</a>
+                                    <span class="new">NEW</span>
+                                </td>
+                                <td>admin</td>
+                                <td class="date">2021-07-11</td>
+                                <td class="views">37</td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input name="check" type="checkbox">
+                                </td>
+                                <td class="num">3</td>
+                                <td class="title">
+                                    <a>::아이템 신규 추가::
+                                        목숨과 쉴드 아이템이 업데이트 되었습니다</a>
+                                    <span class="update">UPDATE</span>
+                                </td>
+                                <td>admin</td>
+                                <td class="date">2019-05-20</td>
+                                <td class="views">33</td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input name="check" type="checkbox">
+                                </td>
+                                <td class="num">2</td>
+                                <td class="title">
+                                    <a>::서버 점검 안내::
+                                        2010-12-14일에는 서버 개편이 예정되어있습니다. 이시각에는 홈페이지를 이용하지 못하니 참고 부탁드립니다.</a>
+                                </td>
+                                <td>admin</td>
+                                <td class="date">2010-10-01</td>
+                                <td class="views">30</td>
+                            </tr>
+                            <tr>
+                                <td class="check">
+                                    <input name="check" type="checkbox">
+                                </td>
+                                <td class="num">1</td>
+                                <td class="title">
+                                    <a> ::신규 개편 안내::
+                                        랭크 시스템이 추가되었습니다!지금 당장 확인해보세요</a>
+                                </td>
+                                <td>admin</td>
+                                <td class="date">2009-06-03</td>
+                                <td class="views">50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="search">
+                        <div class="bundle clearfix">
+                            <select>
+                                <option value="tellus">공지사항</option>
+                            </select>
+                            <input type="text">
+                            <button>
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="pages">
+                        <ul>
+                            <li class="active">
+                                <a>1</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="okay2">
+            <div class="wrapper clearfix">
+                <a class="brand">Magic tile</a>
+                <div class="copyright">
+                    <div><a>! 2021년 무더위 여름을 날려버릴 화끈한 이벤트 !</a></div>
+                    <div>© 2021. <a>이용약관</a>. <a>개인정보처리방침</a></div>
+                </div>
+                <div class="sns">
+                    <a class="fa fa-twitter"></a>
+                    <a class="fa fa-facebook"></a>
+                    <a class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="ann.js"></script>
+</body>
+</html>

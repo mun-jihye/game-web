@@ -1,5 +1,5 @@
 .root {
-    font-family: sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .root *,
@@ -311,24 +311,6 @@
     color: #6a6a6a;
 }
 
-.cards1 .header .right {
-    float: right;
-}
-
-.cards1 .header .right>button {
-    border: 1px solid #ddd;
-    background: none;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.cards1 .header .right>button:hover {
-    background: #eee;
-}
-
 .cards1>.wrapper .cards {
     margin: 0 -15px;
 }
@@ -477,13 +459,15 @@
     padding-right: 100px;
 }
 
-.news1 .contents .item>li>a {
+.news1 .contents .item>li>a:link {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
     cursor: pointer;
     display: block;
+    text-decoration: none;
+    
 }
 
 .news1 .contents .item>li>a:hover {
@@ -500,7 +484,7 @@
 @media screen and (max-width:991px) {
     .news1 .header .left>.title {
         display: block;
-        margin-bottom: 10px;
+        margin-top: 27px;
     }
 
     .news1 .header .left>.desc {
@@ -523,7 +507,7 @@
     float: left;
     color: #1259a7;
     cursor: pointer;
-    font-family: "Parisienne", cursive;
+    font-family: "Parisienne", "cursive";
     font-size: 42px;
     font-weight: bold;
     text-decoration: none;

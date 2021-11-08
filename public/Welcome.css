@@ -1,0 +1,578 @@
+.root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.root *,
+.root *:before,
+.root *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.root .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.root .clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.header1 {
+    position: relative;
+    margin-bottom: 25px;
+    height: 500px;
+}
+
+.header1 .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+.header1 .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.header1 .text>.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header1 .text>.inner>div {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.header1 .text>.inner>a {
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 19px;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    transition: background 0.25s;
+}
+
+.header1 .text>.inner>a:hover {
+    background: #fff;
+    color: #262626;
+}
+
+.header1 .header1-top {
+    padding: 25px;
+}
+
+.header1 .header1-top:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.header1 .header1-top>.brand {
+    float: left;
+    position: relative;
+}
+
+.header1 .header1-top>.brand a {
+    color: #fff;
+    font-family: "Parisienne", cursive;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header1 nav > ul > li > a :hover{
+    text-decoration: underline;
+}
+.header1 .header1-top>nav {
+    float: right;
+}
+
+.header1 .header1-top>nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header1 .header1-top>nav ul ul {
+    display: none;
+}
+
+.header1 .header1-top>nav ul li {
+    position: relative;
+}
+
+.header1 .header1-top>nav ul li a {
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+}
+
+.header1 .header1-top>nav ul li:hover>a {
+    text-decoration: underline;
+}
+
+.header1 .header1-top>nav>ul {
+    text-align: center;
+}
+
+.header1 .header1-top>nav>ul>li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.header1 .header1-top>nav>ul>li:last-child {
+    margin-right: 0;
+}
+
+.header1 .header1-top>nav>ul>li>a {
+    display: inline-block;
+    padding: 10px 15px 20px 15px;
+}
+
+.header1 .header1-top>nav ul>li:hover>ul {
+    display: block;
+}
+
+.header1 .header1-top>nav>ul>li>ul {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 140px;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 5;
+}
+
+.header1 .header1-top>nav>ul>li>ul>li>a {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header1 .header1-top>nav>ul>li>ul>li:last-child>a {
+    border-bottom: 0;
+}
+
+.header1 .header1-top>.toggle {
+    display: none;
+}
+
+@media screen and (max-width:991px) {
+    .header1 .header1-top>.brand {
+        padding: 0 5px;
+    }
+
+    .header1 .header1-top>nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10;
+    }
+
+    .header1 .header1-top.opened nav {
+        display: block;
+    }
+
+    .header1 .header1-top>nav>ul>li {
+        display: block;
+        text-align: left;
+        margin: 0;
+    }
+
+    .header1 .header1-top>nav>ul>li a {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .header1 .header1-top>nav>ul>li>ul {
+        position: static;
+        width: 100%;
+        margin: 0;
+        border: 0;
+    }
+
+    .header1 .header1-top>nav>ul>li>ul>li>a {
+        padding-left: 25px;
+    }
+
+    .header1 .header1-top>nav>ul>li>ul>li>a:before {
+        content: "- ";
+    }
+
+    .header1 .header1-top>nav ul>li:hover>ul {
+        display: none;
+    }
+
+    .header1 .header1-top>nav ul>li.on>ul {
+        display: block;
+    }
+
+    .header1 .header1-top>.toggle {
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+        cursor: pointer;
+    }
+
+    .header1 .header1-top>.toggle>div {
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.25s;
+    }
+
+    .header1 .header1-top>.toggle>div:nth-child(2) {
+        top: 8px;
+    }
+
+    .header1 .header1-top>.toggle>div:nth-child(3) {
+        top: 16px;
+    }
+
+    .header1 .header1-top.opened>.toggle>div:nth-child(1) {
+        top: 8px;
+        transform: rotate(45deg);
+    }
+
+    .header1 .header1-top.opened>.toggle>div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .header1 .header1-top.opened>.toggle>div:nth-child(3) {
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+}
+
+.cards1 {
+    margin-bottom: 30px;
+}
+
+.cards1 .header {
+    margin-bottom: 25px;
+}
+
+.cards1 .header:after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.cards1 .header .left {
+    float: left;
+}
+
+.cards1 .header .left>.title {
+    color: #262626;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cards1 .header .left>.desc {
+    color: #6a6a6a;
+}
+
+.cards1>.wrapper .cards {
+    margin: 0 -15px;
+}
+
+.cards1>.wrapper .cards:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+.cards1>.wrapper .cards .card {
+    float: left;
+    width: calc(100%/3);
+    margin-bottom: 15px;
+}
+
+.cards1>.wrapper .cards .card .inner1 {
+    padding: 0 15px;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .background {
+    cursor: pointer;
+    display: block;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+    position: relative;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .texts {
+    padding: 15px;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .texts .tag {
+    background: #146ece;
+    color: #fff;
+    font-size: 11px;
+    padding: 2.5px 5px;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .texts .title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .texts .desc {
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards1>.wrapper .cards .card .inner1 .inner2 .texts .date {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+@media screen and (max-width:991px) {
+    .cards1 .header .left>.title {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .cards1 .header .left>.desc {
+        display: block;
+    }
+
+    .cards1 .header .right>button {
+        margin-top: 21px;
+    }
+
+    .cards1>.wrapper .cards .card {
+        width: 100%;
+    }
+}
+
+.news1 {
+    margin-bottom: 30px;
+}
+
+.news1 .header {
+    padding: 0 10px 15px 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 22px;
+}
+
+.news1 .header:after {
+    content: " ";
+    display: table;
+    clear: both
+}
+
+.news1 .header .left {
+    float: left;
+}
+
+.news1 .header .left>.title {
+    color: #262626;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+.news1 .header .right {
+    float: right;
+}
+
+.news1 .header .right>button {
+    cursor: pointer;
+    border: 1px solid #1259a7;
+    background: #1259a7;
+    color: #fff;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.news1 .header .right>button:hover {
+    background: #146ece;
+}
+
+.news1 .contents .item {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.news1 .contents .item>li {
+    margin: 10px 0;
+    position: relative;
+    padding-right: 100px;
+}
+
+.news1 .contents .item>li>a:link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    
+}
+
+.news1 .contents .item>li>a:hover {
+    text-decoration: underline;
+}
+
+.news1 .contents .item>li>span {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    font-size: 90%;
+}
+
+@media screen and (max-width:991px) {
+    .news1 .header .left>.title {
+        display: block;
+        margin-top: 27px;
+    }
+
+    .news1 .header .left>.desc {
+        display: block;
+    }
+
+    .news1 .header .right>button {
+        margin-top: 21px;
+    }
+}
+
+.footer1 {
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.footer1 .brand {
+    float: left;
+    color: #1259a7;
+    cursor: pointer;
+    font-family: "Parisienne", "cursive";
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.footer1 .copyright {
+    padding-top: 5px;
+    float: left;
+}
+
+.footer1 .copyright>div {
+    margin-bottom: 10px;
+}
+
+.footer1 .sns {
+    float: right;
+    padding-top: 12.5px;
+}
+
+.footer1 .sns>a {
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.footer1 .sns>a.fa-twitter {
+    background: #1e8ddf;
+    border-color: #1e8ddf;
+}
+
+.footer1 .sns>a.fa-facebook {
+    background: #33488b;
+    border-color: #33488b;
+}
+
+.footer1 .sns>a.fa-instagram {
+    background: #cc245f;
+    border-color: #cc245f;
+}
+
+@media(max-width:767px) {
+    .footer1 {
+        text-align: center;
+    }
+
+    .footer1 .brand {
+        float: none;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+
+    .footer1 .copyright {
+        float: none;
+        margin: 15px 0 25px 0;
+    }
+
+    .footer1 .sns {
+        float: none;
+    }
+}

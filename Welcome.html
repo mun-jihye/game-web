@@ -10,21 +10,49 @@
     <link href="Welcome.css" rel="stylesheet">
     <script src="Welcome.js" defer></script>
     <title>Welcome</title>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDgDNuFcbeHQdZ6M4Qn_GoVszPutdUj6Cs",
+          authDomain: "magic-tile-b9e63.firebaseapp.com",
+          projectId: "magic-tile-b9e63",
+          storageBucket: "magic-tile-b9e63.appspot.com",
+          messagingSenderId: "581318165297",
+          appId: "1:581318165297:web:7bde6db16fec982f2c6610",
+          measurementId: "G-FHF693LT31"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </head> 
 <body>
+    <script defer src="/__/firebase/9.1.0/firebase-app.js"></script>
+    <script defer src="/__/firebase/9.1.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/9.1.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/9.1.0/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <div class="root">
         <header class="header1">
-            <div class="background" style="background-image:url(img/428E90B6-F855-4143-8A35-2FE17C58DDEF.png)">
+            <div class="background" style="background-image:url(img/우주배경2.jpg)">
             </div>
             <div class="text">
                 <div class="inner">
-                    <div>WELCOME!</div>
+                    <h2><div style="font-family: Parisienne, cursive; font-size: 80px; color:#c5cae9;">Magic tile</div></h2>
                     <a>GO TO PLAY</a>
                 </div>
             </div>
             <div class="header1-top">
                 <div class="brand">
-                    <a>GameName</a>
+                    <a>Magic tile</a>
                 </div>
                 <nav>
                     <ul>
@@ -32,61 +60,14 @@
                             <a>Introduce</a>
                             <ul>
                                 <li><a href="IntroduceGame.html" hover='text-decoration:underline' ; >Game</a></li>
-                                <li><a>Cube</a></li>
-                                <li><a>Item</a></li>
+                                <li><a href="IntroItem.html" hover="text-decoration:underline";>Item</a></li>
                                 <li><a href="IntroThem.html" hover='text-decoration:underline' ;>Thema</a></li>
                             </ul>
                         </li>
                         <li>
                             <a>Community</a>
                             <ul>
-                                <li><a>공지사항</a></li>
-                                <li><a>Communication</a></li>
-                                <li><a>Q&amp;A</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>VEHICULA</a>
-                            <ul>
-                                <li><a>Officia</a></li>
-                                <li><a>Accumsan</a></li>
-                                <li><a>Veniam</a></li>
-                                <li><a>Nostrud</a></li>
-                                <li><a>Cillum</a></li>
-                                <li><a>Excepteur</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>PHASELLUS</a>
-                            <ul>
-                                <li><a>Excepteur</a></li>
-                                <li><a>Officia</a></li>
-                                <li><a>Accumsan</a></li>
-                                <li><a>Veniam</a></li>
-                                <li><a>Nostrud</a></li>
-                                <li><a>Cillum</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>ALIQUAM</a>
-                            <ul>
-                                <li><a>Cillum</a></li>
-                                <li><a>Excepteur</a></li>
-                                <li><a>Officia</a></li>
-                                <li><a>Accumsan</a></li>
-                                <li><a>Veniam</a></li>
-                                <li><a>Nostrud</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a>PRETIUM</a>
-                            <ul>
-                                <li><a>Nostrud</a></li>
-                                <li><a>Cillum</a></li>
-                                <li><a>Excepteur</a></li>
-                                <li><a>Officia</a></li>
-                                <li><a>Accumsan</a></li>
-                                <li><a>Veniam</a></li>
+                                <li><a href = "ann.html" hover='text-decoration:underline'>공지사항</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -103,21 +84,18 @@
                 <div class="header">
                     <div class="left">
                         <span class="title">인기 Thema</span>
-                        <span class="desc">인기 테마를 직접 경험해 보세요!</span>
-                    </div>
-                    <div class="right">
-                        <button>MORE</button>
+                        <span class="desc">인기 테마가 궁금하다면 사진을 클릭!</span>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="card">
                         <div class="inner1">
                             <div class="inner2">
-                                <a class="background" style="background-image:url(img/living-room-2155376_640.jpg)"></a>
+                                <a href="IntroThem.html" class="background" style="background-image:url(img/사막2.PNG)"></a>
                                 <div class="texts">
-                                    <span class="tag">Spring</span>
-                                    <a class="title">Secret Garden</a>
-                                    <div class="desc">몽환 그 자체~!</div>
+                                    <span class="tag">Thema 1</span>
+                                    <div class="title">Dessert</div>
+                                    <div class="desc">드넓은 사막</div>
                                     <div class="date">2021-04-13</div>
                                 </div>
                             </div>
@@ -126,11 +104,11 @@
                     <div class="card">
                         <div class="inner1">
                             <div class="inner2">
-                                <a class="background" style="background-image:url(img/apartment-406901_640.jpg)"></a>
+                                <a href="IntroThem.html" class="background" style="background-image:url(img/바다.jpg)" ></a>
                                 <div class="texts">
-                                    <span class="tag">Summer</span>
-                                    <a class="title">Paradise City</a>
-                                    <div class="desc">시원하고 청량한 파라다이스 도시</div>
+                                    <span class="tag">Thmea 2</span>
+                                    <div class="title">Paradise</div>
+                                    <div class="desc">오로라가 펼쳐진 파라다이스</div>
                                     <div class="date">2021-08-15</div>
                                 </div>
                             </div>
@@ -139,11 +117,11 @@
                     <div class="card">
                         <div class="inner1">
                             <div class="inner2">
-                                <a class="background" style="background-image:url(img/home-5835289_640.jpg)"></a>
+                                <a href="IntroThem.html" class="background" style="background-image:url(img/협곡.jpg)"></a>
                                 <div class="texts">
-                                    <span class="tag">Fall</span>
-                                    <a class="title">가을 우체국 앞에서</a>
-                                    <div class="desc">은행잎 바람에 날리는 거리</div>
+                                    <span class="tag">Thema 3</span>
+                                    <div class="title">Canyon</div>
+                                    <div class="desc">광활한 우주 아래의 협곡</div>
                                     <div class="date">2021-11-10</div>
                                 </div>
                             </div>
@@ -159,59 +137,35 @@
                         <span class="title">공지사항</span>
                     </div>
                     <div class="right">
-                        <button>MORE</button>
+                        <button><a href = "ann.html" style="text-decoration:none; color:white">MORE</a></button>
                     </div>
                 </div>
                 <div class="contents">
                     <ul class="item">
                         <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
+                            <a href = "ann.html" style="color:black;" >::어둠땅 업데이트 예정:: 지배의 사슬 음악과 함께 여행길에 올라 보세요~~</a>
+                            <span>2021-12-27</span>
                         </li>
                         <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
+                            <a href = "ann.html" style="color:black;">::큐브 추가::
+                                새로운 큐브 스킨이 나왔습니다!</a>
+                            <span>2021-07-11</span>
                         </li>
                         <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
+                            <a href = "ann.html" style="color:black;">::아이템 신규 추가::
+                                목숨과 쉴드 아이템이 업데이트 되었습니다</a>
+                            <span>2019-05-20</span>
                         </li>
                         <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
+                            <a href = "ann.html" style="color:black;">::서버 점검 안내::
+                                2010-12-14일에는 서버 개편이 예정되어있습니다. 이시각에는 홈페이지를 이용하지 못하니 참고 부탁드립니다.</a>
+                            <span>2010-10-01</span>
                         </li>
                         <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
-                        </li>
-                        <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
-                        </li>
-                        <li>
-                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a venenatis nisl. Aenean ut
-                                nisl
-                                suscipit, ullamcorper ligula in, malesuada magna. Ut id ullamcorper lorem, ac lobortis
-                                arcu.</a>
-                            <span>2021-06-03</span>
+                            <a href = "ann.html" style="color:black;"> ::신규 개편 안내::
+                                랭크 시스템이 추가되었습니다!지금 당장 확인해보세요
+                            </a>
+                            <span>2009-06-03</span>
                         </li>
                     </ul>
                 </div>
@@ -219,7 +173,7 @@
         </div>
         <div class="footer1">
             <div class="wrapper clearfix">
-                <a class="brand">Gamename</a>
+                <a class="brand">Magic tile</a>
                 <div class="copyright">
                     <div>! 2021년 무더위 여름을 날려버릴 화끈한 이벤트 !</div>
                     <div>© 2021. <a>이용약관</a>. <a>개인정보처리방침</a></div>
@@ -233,5 +187,6 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 </body>
 </html>
